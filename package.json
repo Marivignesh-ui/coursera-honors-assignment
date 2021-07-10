@@ -4,12 +4,20 @@
   "description": "movie club app",
   "main": "index.js",
   "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marivignesh",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.0.2",
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
     "lite-server": "^2.6.1"
   }
 }

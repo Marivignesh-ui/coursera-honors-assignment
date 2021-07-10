@@ -1,0 +1,49 @@
+*{
+    font-family: Roboto Slab;
+    box-sizing: border-box;
+}
+.mt-n2{
+    margin-top: -15px;
+}
+.navbar>.container{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    background-color: #0F172A;
+    color: floralwhite;
+}
+.nav-link{
+    color: rgba(255, 255, 255, .65);
+    font-size: 1.1rem;
+}
+.active{
+    color: floralwhite; 
+}
+
+.fs{
+    font-size: 40px;
+    font-weight: bold;
+}
+.fss{
+    font-size: 13px;
+    font-weight: 100;
+}
+.navbar-brand{
+    margin-right: 0px;
+}
+.vr{
+    border-left: 1px solid floralwhite;
+    height:40px;
+}
+#signup{
+    color:#EAB308;
+    background-color: transparent;
+}
+.btn{
+    height: fit-content;
+    font-size: 1.1rem;
+}
+.btn-prime{
+    background-color: #EAB308;
+}
