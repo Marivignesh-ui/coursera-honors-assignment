@@ -47,3 +47,34 @@ nav{
 .btn-prime{
     background-color: #EAB308;
 }
+.jumbotron{
+    background-color: #DBEAFE;
+}
+.iframediv{
+    display: inline-block;
+    width:300px;
+    height:200px;
+}
+iframe{
+    width:100%;
+    height: 100%;
+}
+.carousel-control-prev,.carousel-control-next{
+    background-color: gray;
+    height: min-content;
+    top: 45%;
+    border-radius: 50%;
+    padding: 8px 0px;
+    color: blue;
+}
+.carousel-control-prev {
+    left: -30px;    
+}
+.carousel-control-next{
+    right:-25px;
+}
+#mycarousel{
+    padding: 3px 5%;
+    background-color: #DBEAFE;
+    box-shadow: 0px 3px 10px black;
+}
