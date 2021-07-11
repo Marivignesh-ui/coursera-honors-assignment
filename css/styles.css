@@ -12,6 +12,7 @@
 nav{
     background-color: #0F172A;
     color: floralwhite;
+    position: fixed;
 }
 .nav-link{
     color: rgba(255, 255, 255, .65);
@@ -77,4 +78,45 @@ iframe{
     padding: 3px 5%;
     background-color: #DBEAFE;
     box-shadow: 0px 3px 10px black;
+}
+.trendinggenre{
+    list-style: none;
+    padding-left: 0px;
+}
+.trendinggenre>li{
+    display: inline-block;
+    padding:3px 2%;
+    margin: auto 5%;
+    background-color: #A2DCEE;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.card{
+    width:15rem;
+    background-color: #A2DCEE;
+}
+.rating{
+    display: inline-block;
+    text-align: right;
+    margin-right: 0px;
+    margin-left: 9rem;
+    background-color: #0F172A;
+    padding: 0.5rem 0.7rem;
+    border-radius: 10px;
+    color:floralwhite;
+}
+.card-body{
+    padding-bottom: 5px;
+}
+.list-unstyled>li{
+    display: inline-block;
+}
+footer{
+    background-color:  #0F172A;
+    color:#fffaf0;
+    margin-top: 5%;
+    padding-top: 0.5rem;
+}
+.fa{
+    color:#fffaf0;
 }
