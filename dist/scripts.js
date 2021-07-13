@@ -120,6 +120,8 @@ function moviesbygenre(genre){
 		prevlink.setAttribute("class","btn");
 		let link=document.getElementById(`${genre}`);
 		link.setAttribute("class","btn link-active");
+		let link1=document.getElementById(`${genre}-up`);
+		link1.setAttribute("class","link-active1");
 		document.getElementById("movielisttitle").innerText=`${genre[0].toUpperCase()+genre.slice(1)}`;
 		let counter=0;
 		inter=setInterval(()=>{
@@ -136,6 +138,8 @@ function defaultfun(){
 	document.getElementById("movielisttitle").innerText="Popular";
 	let link=document.getElementById("popular");
 	link.setAttribute("class","btn link-active");
+	let link1=document.getElementById("popular-up");
+	link1.setAttribute("class","link-active1");
 	parent=document.getElementById("movielist");
 	parent.innerHTML=poplist;
 	prev="popular"
