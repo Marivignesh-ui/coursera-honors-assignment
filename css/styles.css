@@ -91,9 +91,16 @@ iframe{
     border-radius: 10px;
     font-size: 1.1rem;
 }
+.trendinggenre>li>a{
+    color: black;
+}
 .card{
     width:15rem;
     background-color: #A2DCEE;
+    margin: 2% 1% 1% 2%;
+}
+.card-img-top{
+    height: 15rem;
 }
 .rating{
     display: inline-block;
@@ -108,9 +115,6 @@ iframe{
 .card-body{
     padding-bottom: 5px;
 }
-.list-unstyled>li{
-    display: inline-block;
-}
 footer{
     background-color:  #0F172A;
     color:#fffaf0;
@@ -119,4 +123,31 @@ footer{
 }
 .fa{
     color:#fffaf0;
+}
+.form-search{
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 2.5rem;
+}
+.btn-search{
+    border-left: 0px;
+    margin-left: -30px;
+    height: 2.5rem;
+}
+.moviegenre>li{
+    background-color: #10bce3;
+    margin-top: 2%;
+}
+.left-tab{
+    border-right: 1px solid rgba(0, 0, 0, .25);
+}
+.left-tab li:hover{
+    background-color: #EAB308;
+}
+.link-active{
+    background-color: #EAB308;
+}
+.user{
+    border-radius: 50%;
 }

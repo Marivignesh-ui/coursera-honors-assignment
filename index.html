@@ -25,7 +25,7 @@
                 <div class="d-flex align-items-center">
                     <button class="btn" id="signup">Signup</button>
                     <div class="vr"></div>
-                    <button type="button"  class="btn mx-3 btn-prime">Login</button>
+                    <button type="button"  class="btn mx-3 btn-prime" id="loginbutton">Login</button>
                 </div>
                 
                 
@@ -35,10 +35,10 @@
                             <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Movies</a>
+                            <a class="nav-link" href="movies.html">Movies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Rate&Review</a>
+                            <a class="nav-link" href="rating.html">Rate&Review</a>
                         </li>
                     </ul>
                 </div>
@@ -46,6 +46,34 @@
             </div>                
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" id="buttonclose">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3>Update Coming Soon.....</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="SignupModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Signup</h4>
+                    <button type="button" class="close" id="buttonclose1">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3>Update Coming Soon.....</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron"> 
         <div class="container">
@@ -57,13 +85,8 @@
                     <div class="row">
                         <div class="d-sm-flex col-12 m-auto justify-content-center">
                             <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner" role="listbox">
+                                <div class="carousel-inner" role="listbox"> 
                                     <div class="carousel-item active">
-                                        <div class="iframediv">
-                                            <iframe  src="https://www.youtube.com/embed/videoseries?list=PLwP0aslf6lqzuwS44ZaJzeqLvibLSW70j" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLMumsWXNf2nurY-NeitPIumiRSFa9alDo" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
                                         <div class="iframediv">
                                             <iframe src="https://www.youtube.com/embed/H0tiy4konIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </div>
@@ -81,6 +104,11 @@
                                     <div class="carousel-item">
                                         <div class="iframediv">
                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/odM92ap8_c0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="iframediv">
+                                            <iframe  src="https://www.youtube.com/embed/videoseries?list=PLwP0aslf6lqzuwS44ZaJzeqLvibLSW70j" src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLMumsWXNf2nurY-NeitPIumiRSFa9alDo" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -111,21 +139,65 @@
                 <li>Thriller</li>
             </ul>
         </div>
-        <div>
-            <h3>Trending Movies</h3>
-            <hr>
-            <div class="card">
-                <img src="images/avengers.jpg" class="card-img-top" alt="avengers-image">
-                <div class="card-body">
-                    <h5><strong>Avengers Endgame</strong> </h5>
-                    <p class="card-text"><strong>Genre:</strong> Action/Scifi<br> 
-                        <a href="#">View more</a><br>
-                        <span class="rating">4.5/5</span>
-                    </p>
-                    
+        <h3>Trending Movies</h3>
+        <hr>
+        <div class="col-12">
+            <div class="col-12 d-flex flex-wrap">    
+                <div class="card">
+                    <img src="images/avengers.jpg" class="card-img-top" alt="avengers-image">
+                    <div class="card-body">
+                        <h5><strong>Avengers Endgame</strong> </h5>
+                        <p class="card-text"><strong>Genre:</strong> Action/Scifi<br> 
+                            <a href="#">View more</a><br>
+                            <span class="rating">4.5/5</span>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="images/f&f.jpg" class="card-img-top" alt="avengers-image">
+                    <div class="card-body">
+                        <h5><strong>Fast and Furious</strong> </h5>
+                        <p class="card-text"><strong>Genre:</strong> Action/Thriller<br> 
+                            <a href="#">View more</a><br>
+                            <span class="rating">4.8/5</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card"> 
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNjRmNDI5MjMtMmFhZi00YzcwLWI4ZGItMGI2MjI0N2Q3YmIwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
+                    <div class="card-body">
+                        <h5><strong>Black Widow</strong></h5>
+                        <p class="card-text"> <strong>Genre:</strong> Action,Adventure,Sci-Fi <br>
+                            <a href="#">View more </a> <br>
+                            <span class="rating">7/10</span> </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BMjI0NmFkYzEtNzU2YS00NTg5LWIwYmMtNmQ1MTU0OGJjOTMxXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_.jpg">
+                    <div class="card-body">
+                        <h5><strong>F9: The Fast Saga</strong></h5>
+                        <p class="card-text"> <strong>Genre:</strong> Action,Adventure,Crime, Thriller <br>
+                            <a href="#">View more </a> <br>
+                            <span class="rating">5.5/10</span> </p>
+                    </div>
+                </div>
+
+                <div class="card"><img class="card-img-top" 
+                    src="https://m.media-amazon.com/images/M/MV5BNTI2YTI0MWEtNGQ4OS00ODIzLWE1MWEtZGJiN2E3ZmM1OWI1XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg">
+                    <div class="card-body">
+                        <h5><strong>The Tomorrow War</strong></h5>
+                        <p class="card-text"> <strong>Genre:</strong> Action,Adventure,Drama ,Sci-Fi,Thriller
+                            <br>
+                            <a href="#">View more </a> <br>
+                            <span class="rating">6.7/10</span> </p>
+                    </div>
                 </div>
             </div>
         </div>
+        <a href="movies.html" class="btn btn-primary mt-5">Go to Movies Section &nbsp;<i class="fa fa-angle-double-right"></i></a>
     </div>
     
     <footer class="footer">
@@ -134,11 +206,12 @@
                 <div class="col-12  align-self-center">
                     <div class="text-center">
                         <a class="btn" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn" href="https://www.facebook.com/marivignesh01/"><i class="fa fa-facebook"></i></a>
+                        <a class="btn" href="https://www.linkedin.com/in/marivignesh/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn" href="https://twitter.com/marivigneshr499"><i class="fa fa-twitter"></i></a>
+                        <a class="btn" href="https://www.instagram.com/marivignesh499/"><i class="fa fa-instagram"></i></a>
+                        <a class="btn" href="http://youtube.com/movies"><i class="fa fa-youtube"></i></a>
+                        <a class="btn" href="mailto:smartvignesh499@gmail.com"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
            </div>
@@ -155,7 +228,8 @@
    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts1.js"></script> 
 </body>
 </html>
 
