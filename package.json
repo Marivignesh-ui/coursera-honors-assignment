@@ -6,12 +6,7 @@
   "scripts": {
     "start": "npm run lite",
     "lite": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf dist",
-    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "imagemin": "imagemin images/* --out-dir='dist/images'",
-    "usemin": "usemin rating.html -d dist --htmlmin -o dist/rating.html && usemin movies.html -d dist --htmlmin -o dist/movies.html && usemin index.html -d dist --htmlmin -o dist/index.html",
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marivignesh",
   "license": "ISC",
