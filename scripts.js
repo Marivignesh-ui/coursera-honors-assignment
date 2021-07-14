@@ -1,5 +1,6 @@
 
-let apikey="a7d00503dfmsh9725c87cd5dcb63p1bb2e8jsn956e12391d67";
+let apikey="46862abb86msh8484ee2bd1b070dp1213d8jsn31f8f7e9ad84";
+// let apikey="a7d00503dfmsh9725c87cd5dcb63p1bb2e8jsn956e12391d67";
 let apihost="imdb8.p.rapidapi.com";
 let inter;
 let prev="popular";
@@ -68,12 +69,13 @@ function createcard(title,url,genre,rating){
 	imagelement.setAttribute("src",""+url);
 	imagelement.setAttribute("class","card-img-top");
 	imagelement.setAttribute("alt",`${title}`);
+	imagelement.setAttribute("loading","lazy");
 	element1=document.createElement("div");
 	element1.className="card-body";
 	element1.innerHTML=`<h5><strong>${title}</strong></h5>
 						<p class="card-text"> <strong>Genre:</strong> ${genre} <br>
 						<a href="#">View more </a> <br>
-						<span class="rating">${rating}/10</span> </p>`;	
+						<span class="rating">${rating!=undefined?rating:"7.4"}/10</span> </p>`;	
 	element.appendChild(imagelement);
 	element.appendChild(element1);
 	parent.appendChild(element);
@@ -108,8 +110,8 @@ function moviesbygenre(genre){
 	fetch(`https://imdb8.p.rapidapi.com/title/get-popular-movies-by-genre?genre=%2Fchart%2Fpopular%2Fgenre%2F${genre}`, {
 	"method": "GET",
 	"headers": {
-		"x-rapidapi-key": "a7d00503dfmsh9725c87cd5dcb63p1bb2e8jsn956e12391d67",
-		"x-rapidapi-host": "imdb8.p.rapidapi.com"
+		"x-rapidapi-key": apikey,
+		"x-rapidapi-host": apihost
 	}
 	})
 	.then(Response => {return Response.json()})
@@ -118,6 +120,8 @@ function moviesbygenre(genre){
 		parent.innerHTML="";
 		let prevlink=document.getElementById(`${prev}`);
 		prevlink.setAttribute("class","btn");
+		let prevlink1=document.getElementById(`${prev}-up`);
+		prevlink1.setAttribute("class","");
 		let link=document.getElementById(`${genre}`);
 		link.setAttribute("class","btn link-active");
 		let link1=document.getElementById(`${genre}-up`);
@@ -136,6 +140,10 @@ function moviesbygenre(genre){
 }
 function defaultfun(){
 	document.getElementById("movielisttitle").innerText="Popular";
+	let prevlink=document.getElementById(`${prev}`);
+	prevlink.setAttribute("class","btn");
+	let prevlink1=document.getElementById(`${prev}-up`);
+	prevlink1.setAttribute("class","");
 	let link=document.getElementById("popular");
 	link.setAttribute("class","btn link-active");
 	let link1=document.getElementById("popular-up");

@@ -152,7 +152,9 @@ footer{
     border-radius: 50%;
 }
 .link-active1{
-    background-color: #0F172A;
-    color: floralwhite;
+    background-color: #0F172A !important;
+}
+.link-active1>a{
+    color: floralwhite !important;
 }
 
